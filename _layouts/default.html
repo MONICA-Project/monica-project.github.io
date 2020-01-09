@@ -39,9 +39,9 @@
         {% endif %}
 
         <ul>
-          {% for page in site.pages %}
+          {% for tab in site.tabs %}
             <li>
-              <p><a href="{{ page.url }}">{{ page.name }}</a></p>
+              <p><a href="{{ tab.url }}">{{ tab.name }}</a></p>
             </li>
           {% endfor %}
         </ul>
