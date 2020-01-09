@@ -1,6 +1,6 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: MONICA EU Project
+logo: /assets/img/monica.png
+description: This is the tutorial related to MONICA Project components
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
