@@ -4,3 +4,5 @@ description: This is the tutorial related to MONICA Project components
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+collections:
+  tabs:
