@@ -24,7 +24,7 @@ To demonstrate how these challenges can be met through the use of technology, MO
 ## Solutions For Sound Control in Events
 
 ## Solution for blimps
-[A RIOT-OS based firmware for an IoT enabled blimp](https://github.com/MONICA-Project/blimp)
+[](https://github.com/MONICA-Project/blimp)
 
 ## MONICA Platform Tools
   1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD)
