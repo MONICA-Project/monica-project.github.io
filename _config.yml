@@ -8,3 +8,7 @@ collections_dir: contents
 collections:
   sections:
     output: true
+github:
+  is_project_page: true
+  is_user_page: true
+  
