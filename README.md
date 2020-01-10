@@ -15,9 +15,10 @@ The markdown should have following format
 ```markdown
 ---
 layout: default
-name: <Title of the Tutorial>
+name: <Title of the Tutorial>  <!--- This is required for the page to come in the side pane --->
 ---
 # Title of the Tutorial
+Few words about the tutorial
 ## Table of Contents
 1. [First]
 2. [second]

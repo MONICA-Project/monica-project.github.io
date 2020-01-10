@@ -1,6 +1,6 @@
 ---
 layout: default
-name: OGC Historical Data Retrieval & Visualizations
+name: OGC Historical Data Retrieval & Visualizations  <!--- This is required for the page to come in the side pane --->
 ---
 
 # OGC Historical Data Retrieval & Visualizations
