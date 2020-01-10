@@ -2,122 +2,32 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# About MONICA
+Sound and security applications for large, open-air events in the city
 
-[Link to another page](./another-page.html).
+The MONICA project is a large-scale demonstration of new and existing IoT applications for a smarter living. The demonstration involves six major cities in Europe: Lyon, Bonn, Leeds, Turin, Copenhagen and Hamburg.
 
-There should be whitespace between paragraphs.
+Focus is on one of the key aspects of European society: the cultural performances in open-air settings which create challenges in terms of crowd safety, security and noise pollution.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+To demonstrate how these challenges can be met through the use of technology, MONICA will develop, deploy and demonstrate three IoT ecosystems on security, acoustics and innovation, addressing real user needs. Within these systems, several applications are deployed, using IoT-enabled devices such as smart wristbands, video cameras, loudspeakers and mobile phones.
 
-# Header 1
+# Monica Solutions
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Staff Management
+1. [Demonstration of staff management with LoRa based locators]( https://github.com/MONICA-Project/staff-management-demo)
 
-## Header 2
+2. [ Staff Management application ](https://github.com/MONICA-Project/map-project)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+3. [RIOT-OS based GPS tracking devices using LoRaWAN](https://github.com/MONICA-Project/lorawan-tracker)
 
 
-### Definition lists can be used with HTML syntax.
+## Solutions For Sound Control in Events
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+## Solution for blimps
+[A RIOT-OS based firmware for an IoT enabled blimp](https://github.com/MONICA-Project/blimp)
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+## MONICA Platform Tools
+  1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD)
+  2. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
 
-```
-The final element.
-```
+
