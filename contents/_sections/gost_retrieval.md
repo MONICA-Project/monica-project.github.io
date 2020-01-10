@@ -63,20 +63,20 @@ One approach we tried and tested is wih the help of pgAdmin that can be download
 4. Now for custom queries go to "Tools→Query tool" and execute queries
 
 ## Visualize using Grafana
-[PostgreSQL data source](https://grafana.com/grafana/plugins/postgres) for grafana helps in visualizing the GOST data.
+![PostgreSQL data source](https://grafana.com/grafana/plugins/postgres) for grafana helps in visualizing the GOST data.
 
-![Create datasource](https://github.com/MONICA-Project/monica-project.github.io/blob/master/assets/img/Grafana_datasource.png)
+![Create datasource](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/Grafana_datasource.png)
 
 Create a new dashboard and add a panel with a graph (refer to the Grafana documentation for details):
 
-![Create dashboard](https://github.com/MONICA-Project/monica-project.github.io/blob/master/assets/img/grafana_create_dashboard.png)
+![Create dashboard](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/grafana_create_dashboard.png)
 
 
-![Create panel](https://github.com/MONICA-Project/monica-project.github.io/blob/master/assets/img/grafana_create_panel_with_graph.png)
+![Create panel](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/grafana_create_panel_with_graph.png)
 
 Edit the panel:
 
-![Edit panel](https://github.com/MONICA-Project/monica-project.github.io/blob/master/assets/img/grafana_edit_panel.png)
+![Edit panel](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/grafana_edit_panel.png)
 
 Then choose your Postgres data source and add the SQL. For a time series query, one column has to be named "time".
 
