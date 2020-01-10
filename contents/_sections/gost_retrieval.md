@@ -1,8 +1,9 @@
 ---
 layout: default
-name: OGC Historical Data Retrieval
+name: OGC Historical Data Retrieval & Visualizations
 ---
 
+# OGC Historical Data Retrieval & Visualizations
 This tutorial is guides through the methods of fetching or visualizing the data stored in [GOST based OGC server](https://github.com/gost/server).
 
 ## Fetch Using OGC Server
