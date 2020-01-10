@@ -6,6 +6,11 @@ name: OGC Historical Data Retrieval & Visualizations
 # OGC Historical Data Retrieval & Visualizations
 This tutorial is guides through the methods of fetching or visualizing the data stored in [GOST based OGC server](https://github.com/gost/server).
 
+## Table of Contents
+1. [Fetch Using OGC Server](#Fetch-Using-OGC-Server)
+2. [Fetching Directly from PostgreSQL](#Fetching-Directly-from-PostgreSQL)
+3. [Visualization Using Grafana](#Visualization-Using-Grafana)
+
 ## Fetch Using OGC Server
 This approach is most suited when you are developing an application following OGC specification. The RESTful requests can follow the conventions as shown in the OGC specification.
 
@@ -62,7 +67,7 @@ One approach we tried and tested is wih the help of pgAdmin that can be download
 3. Now you have a connection
 4. Now for custom queries go to "Tools→Query tool" and execute queries
 
-## Visualize using Grafana
+## Visualization Using Grafana
 ![PostgreSQL data source](https://grafana.com/grafana/plugins/postgres) for grafana helps in visualizing the GOST data.
 
 ![Create datasource](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/Grafana_datasource.png)
