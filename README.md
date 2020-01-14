@@ -15,13 +15,14 @@ The markdown should have following format
 ```markdown
 ---
 layout: default
-name: <Title of the Tutorial>  <!--- This is required for the page to come in the side pane --->
+title: <Title of the Tutorial>  <!--- This is required for the page to come in the side pane --->
 ---
-# Title of the Tutorial
+<span style="font-size:2em;">Title of the Tutorial</span>
+<!-- Using Span is a hack to avoid the title to come again in TOC.-->
 Few words about the tutorial
-## Table of Contents
-1. [First]
-2. [second]
+
+* TOC (Do not remove. This is required to show Table of contents)
+ {:toc}
 
 ## First
 Contents 

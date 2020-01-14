@@ -13,3 +13,6 @@ collections:
 github:
   is_project_page: true
   is_user_page: true
+
+
+markdown: kramdown

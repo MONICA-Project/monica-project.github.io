@@ -1,15 +1,22 @@
 ---
 layout: default
-name: OGC Historical Data Retrieval & Visualizations  <!--- This is required for the page to come in the side pane --->
----
+title: OGC Historical Data Retrieval & Visualizations  <!--- This is required for the page to come in the side pane --->
 
-# OGC Historical Data Retrieval & Visualizations
+---
+<span style="font-size:2em;">OGC Historical Data Retrieval & Visualizations</span>
+<!-- Using Span is a hack to avoid the title to come again in TOC.-->
+
 This tutorial is guides through the methods of fetching or visualizing the data stored in [GOST based OGC server](https://github.com/gost/server).
 
+<!--
 ## Table of Contents
 1. [Fetch Using OGC Server](#Fetch-Using-OGC-Server)
 2. [Fetching Directly from PostgreSQL](#Fetching-Directly-from-PostgreSQL)
 3. [Visualization Using Grafana](#Visualization-Using-Grafana)
+-->
+
+* TOC (Do not remove. This is required to show Table of contents)
+ {:toc}
 
 ## Fetch Using OGC Server
 This approach is most suited when you are developing an application following OGC specification. The RESTful requests can follow the conventions as shown in the OGC specification.

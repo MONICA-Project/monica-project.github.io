@@ -2,3 +2,9 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
