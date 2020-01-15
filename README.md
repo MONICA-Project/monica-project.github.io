@@ -37,16 +37,7 @@ You can add image to [assets/img folder](https://github.com/MONICA-Project/monic
 ![MONICA](https://github.com/MONICA-Project/template/raw/master/monica.png)  
 This work is supported by the European Commission through the [MONICA H2020 PROJECT](https://www.monica-project.eu) under grant agreement No 732350.
 
-> # Notes
->
-> * The above templace is adapted from [[1](https://github.com/cpswarm/template), [2](https://www.makeareadme.com), [3](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2), [4](https://github.com/dbader/readme-template)].
-> * Versioning: Use [SemVer](http://semver.org/) and tag the repository with full version string. E.g. `v1.0.0`
-> * License: Provide a LICENSE file at the top level of the source tree. You can use Github to [add a license](https://help.github.com/en/articles/adding-a-license-to-a-repository). This template repository has an [Apache 2.0](LICENSE) file.
->
-> *Remove this section from the actual readme.*
 
-
-
-[The code is taken from the minimal theme](https://pages-themes.github.io/minimal/)
+[The code is taken from the minimal theme](https://pages-themes.github.io/minimal/) by [orderedlist](https://github.com/orderedlist)
 
 
