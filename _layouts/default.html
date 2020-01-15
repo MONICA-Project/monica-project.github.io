@@ -52,16 +52,39 @@
       <footer>
 
         {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View the project's GitHub Profile</a></p>
+        <p class="view">
+          <a href="{{ site.github.owner_url }}">
+            View the project's GitHub Profile
+          </a>
+        </p>
         {% endif %}
 
-        <p><small>This work is supported by the European Commission through the MONICA H2020 PROJECT under grant agreement No 732350. </small></p>
+        <p>
+          <small>
+            This work is supported by the European Commission through the MONICA H2020 PROJECT under grant agreement No 732350. 
+          </small>
+        </p>
         
         {% if site.github.is_project_page %}
-        <p class="view"><small><a href="{{ site.github.repository_url }}">View the source code on GitHub</small></a></p>
+        <p class="view">
+          <small>
+            <a href="{{ site.github.repository_url }}">
+              View the source code on GitHub
+            </a>
+          </small>
+        </p>
         {% endif %}
 
-        <p><small>Hosted on GitHub Pages &mdash; Theme by </small> <a href="https://github.com/orderedlist"><small>orderedlist</small></a></p>
+        <p>
+          <small>
+            Hosted on GitHub Pages &mdash; Theme by
+          </small> 
+          <a href="https://github.com/orderedlist">
+            <small>
+              orderedlist
+            </small>
+          </a>
+        </p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
