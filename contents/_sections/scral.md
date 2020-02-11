@@ -5,7 +5,7 @@ title: SCRAL integration tutorial <!--- This is required for the page to come in
 <span style="font-size:2em;">SCRAL integration tutorial</span>
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
 
-This tutorial will help you to understand how to start using SCRAL and how to develop your own SCRAL module [GOST based OGC server](https://github.com/gost/server).
+This tutorial will help you to understand how to start using SCRAL and how to develop your own SCRAL module.
 
 <!--
 ## Table of Contents
@@ -23,7 +23,7 @@ This tutorial will help you to understand how to start using SCRAL and how to de
 To start working with SCRAL is necessary to have Docker installed on your machine.
 To install the proper version for your operating system, have a look to the [Docker documentation page](https://docs.docker.com/).
 
-SCRAL depends on GOST, a Golang (Go) of the Sensing profile of the OGC SensorThings API.
+SCRAL depends on GOST, a Golang (Go) implementation of the Sensing profile of the OGC SensorThings API.
 To learn more about OGC and GOST visit the [GOST GitHub page](https://github.com/gost/server) or the MONICA tutorial about 
 [OGC Historical Data Retrieval & Visualizations](https://monica-project.github.io/sections/gost_retrieval.html).
 
@@ -47,19 +47,19 @@ For running a SCRAL docker-compose, it is necessary that few environmental varia
 
 ```docker-compose
 scral:
-    image: scral/quickstart:${SCRAL_MODULE}
+    image: monicaproject/scral:${SCRAL_MODULE}
     container_name: "SCRAL-${SCRAL_MODULE}"
     environment:
         CONFIG: “custom”
 ```
 
-Note: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
-Note2: for certain modules is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
+*Note*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
+*Note2*: for certain modules is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
 
 ### Testing SCRAL capabilities
 When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
 You can interact with SCRAL using the APIs available [here](www.example.org)
-[//]: # (generate and publish Swagger SCRAL API)
+[comment]: # (generate and publish Swagger SCRAL API)
 
 Each SCRAL module with a REST endpoint exposes also a landing page useful both for testing the reachability of the endpoint and for having a quick overview of the available SCRAL API (e.g.: http://localhost:8000/scral/v1.0/gps-tracker-gw)
 
