@@ -97,12 +97,43 @@ python smart_glasses/start_smart_glasses.py -p test
 ```
 Note: if the environmental variable CONFIG exists is set to "custom" the configuration file is not read.
 
+#### Python Packages
+To work properly SCRAL requires the following Python packages (with the recommended versions):
+ - [Eclipse Paho](https://pypi.org/project/paho-mqtt/1.5) 1.5
+ - [Flask](https://pypi.org/project/Flask/1.0.2) 1.0.2
+ - [CherryPy](https://pypi.org/project/CherryPy/18.1.0) 18.1.0
+ - [arrow](https://pypi.org/project/arrow/0.14.2) 0.14.2 (arrow 0.15 not supported)
+ - [requests](https://pypi.org/project/requests/2.22.0) 2.22.0
+ - [configparser](https://pypi.org/project/configparser/3.7.1) 3.7.1
+
 
 ## Implement a new SCRAL module
-The following picture present the high level architecture of the SCRAL framework.
+The following picture present the high-level architecture of the SCRAL framework.
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL_architecture.png" alt="SCRAL high level architecture" width="350"/> <br>
 
 To create a new SCRAL module, you can start from the "template_rest" folder and modify it according to your needs.
-This folder contains a generic "ready-to-use" SCRAL module that expose a REST <em>resource manager</em> and an MQTT <em>connector</em>.
+This folder contains a generic "ready-to-use" SCRAL module that expose a REST <em>resource manager</em> and an MQTT <em>connector</em> (look at the previous picture).
+
+### Step 1: Prepare the OGC Configuration
+As already mentioned, SCRAL is strongly connected to the OGC Sensor Things model. To start work with the model I strongly suggest you to have a look at the [official documentation](http://developers.sensorup.com/docs/#sensorthingsAPISensing).
+Inside ./template_rest/config you will find the file "ogc_config_template.conf", go there and modify the entities if you need it.
+
+#### OGC MONICA Thing
+In our paradigm, an OGC Thing represent a platform (e.g. a gateway, a hub) and should be unique for each SCRAL module.
+Close to this parameter you have to specify the number of the other entities (every field is mandatory, but it could be set to 0).
+
+#### OGC MONICA Sensor
+In our paradigm, an OGC Sensor represent a class of device --- i.e. not a specific device like the wristband 579 but the generic wristband device. If necessary, you could define many different devices for each module (in our example we will use just one).
+
+#### OGC (Observed) Property
+An Observed Property represent a measure that could be observed. E.g.: a location, a temperature, a pressure, etc...
+If necessary, you could define many different Observed Property for each sensor, but you will have to assign every property to the right device class (again, in our example we will use just one).
+
+#### OGC Datastream (not part of the ogc_config.conf)
+The datastream is the entity that will manage the dataflow. The datastreams should not be modelled in this file because they are generated at runtime.
+
+#### Virtual Entities (Sensor, Property and Datastreams)
+The Virtual Entities are not part of the OGC Sensor Things API - Sensing. They were introduced to create a distinction between class of Sensor that are used only for sensing and class of Sensor that are used only for send a command (actuate).
+When you want to define an Observed Property that will be written (instead of been read), you have to define a Virtual Sensor, a Virtual Property and a Virtual Datastream.
 
 [... still work in progress ...]
