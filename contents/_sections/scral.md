@@ -108,11 +108,11 @@ To work properly SCRAL requires the following Python packages (with the recommen
 
 
 ## Implement a new SCRAL module
-The following picture present the high-level architecture of the SCRAL framework.
+The following picture present the high-level architecture of the SCRAL framework.<br>
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL_architecture.png" alt="SCRAL high level architecture" width="350"/> <br>
 
 To create a new SCRAL module, you can start from the "template_rest" folder and modify it according to your needs.
-This folder contains a generic "ready-to-use" SCRAL module that expose a REST <em>resource manager</em> and an MQTT <em>connector</em> (look at the previous picture).
+This folder contains a generic "ready-to-use" SCRAL module that exposes a REST <em>resource manager</em> and is configured to contact GOST through REST and MQTT <em>connectors</em> (look at the previous picture).
 
 ### Step 1: Prepare the OGC Configuration
 As already mentioned, SCRAL is strongly connected to the OGC Sensor Things model. To start work with the model I strongly suggest you to have a look at the [official documentation](http://developers.sensorup.com/docs/#sensorthingsAPISensing).
@@ -161,4 +161,13 @@ Two functionality that must be coded in each new SCRAL module are:
 
 You can start from the code in "template_rest_module.py" to understand how to code these functionalities.
 
-[... still work in progress ...]
+### Step 5: Dockerize
+When you tested your module, you can decide to dockerize it.
+To do that, you can take advantage of the "Dockerfile" already available in the "template_rest" folder.
+If you need also to upload the image con dockerhub, you can use the "deploy.sh" script contained in the main folder of the SCRAL repository.
+To launch that script is necessary to specify the name of the resulting image, the name of the dockerfile and the repository on which you want to push the image (it is necessary to run "docker login" before running the script).
+```bash
+./deploy.sh <module_name> <dockerfile_name> <repository_name>
+```
+
+[... SCRAL API still to be added ...]
