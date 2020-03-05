@@ -58,6 +58,7 @@ scral:
 ```
 
 *Note*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
+
 *Note2*: for certain modules is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
 
 ### Testing SCRAL capabilities
@@ -144,11 +145,11 @@ Inside file "start_template_module.py" you can see all the exposed endpoint thro
 When you run the "template rest module", a list of the available endpoints could also be reached at the following URL: http://localhost:8000/scral/v1.0/your_module (you can change all the URL going inside file "constants.py" of the template module).
 
 By default, the template module exposes 5 endpoints:
-1. testing/documentation (GET): useful to test if the module is correctly running;
-1. registering devices (POST): to add new devices in the MONICA IoT platform;
-1. deleting devices (DELETE): to remove a device from the MONICA IoT platform;
-1. sending observations (PUT): to send measure related to an already registered device;
-1. active devices: to have a list of the already registered devices;
+1. <em>documentation<em> (GET): useful to test if the module is correctly running and to have info about other endpoints;
+1. <em>registering devices<em> (POST): to add new devices in the MONICA IoT platform;
+1. <em>deleting devices<em> (DELETE): to remove a device from the MONICA IoT platform;
+1. <em>sending observations<em> (PUT): to send measure related to an already registered device;
+1. <em>active devices<em> (GET): to have a list of the already registered devices;
 
 Note: the PUT endpoint must be coded to recognize the same Observed Property defined inside the "ogc_config_template.conf" file.
 
