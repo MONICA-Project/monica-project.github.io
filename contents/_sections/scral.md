@@ -132,8 +132,33 @@ If necessary, you could define many different Observed Property for each sensor,
 #### OGC Datastream (not part of the ogc_config.conf)
 The datastream is the entity that will manage the dataflow. The datastreams should not be modelled in this file because they are generated at runtime.
 
-#### Virtual Entities (Sensor, Property and Datastreams)
+#### Virtual Entities (Sensor, Property and Datastream)
 The Virtual Entities are not part of the OGC Sensor Things API - Sensing. They were introduced to create a distinction between class of Sensor that are used only for sensing and class of Sensor that are used only for send a command (actuate).
 When you want to define an Observed Property that will be written (instead of been read), you have to define a Virtual Sensor, a Virtual Property and a Virtual Datastream.
+
+### Step 2: Modify the preferences
+As already explained in section "Running a SCRAL module from the source code", if you need different settings, you can go inside folder "./config/local" and modify the content of "preferences.json" or create a new folder with a "preferences.json" file inside.
+
+### Step 3: Checking or adding new REST endpoints
+Inside file "start_template_module.py" you can see all the exposed endpoint through Flask.
+When you run the "template rest module", a list of the available endpoints could also be reached at the following URL: http://localhost:8000/scral/v1.0/your_module (you can change all the URL going inside file "constants.py" of the template module).
+
+By default, the template module exposes 5 endpoints:
+1. testing/documentation (GET): useful to test if the module is correctly running;
+1. registering devices (POST): to add new devices in the MONICA IoT platform;
+1. deleting devices (DELETE): to remove a device from the MONICA IoT platform;
+1. sending observations (PUT): to send measure related to an already registered device;
+1. active devices: to have a list of the already registered devices;
+
+Note: the PUT endpoint must be coded to recognize the same Observed Property defined inside the "ogc_config_template.conf" file.
+
+### Step 4: Adding your logic and functionalities
+The SCRAL core already provides some basic functionalities that you can use in your own module (like the OGC registration and the interactions with the MQTT broker).
+
+Two functionality that must be coded in each new SCRAL module are:
+- the method for registering new datastreams (usually called "ogc_datastream_registration")
+- the method for managing new observations received (usually called "ogc_observation_registration")
+
+You can start from the code in "template_rest_module.py" to understand how to code these functionalities.
 
 [... still work in progress ...]
