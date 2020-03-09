@@ -22,6 +22,7 @@ To demonstrate how these challenges can be met through the use of technology, MO
 
 ## Crowd Management
 1. [Demonstration of crowd management using smart wristbands](https://github.com/MONICA-Project/DockerGlobalWristbandSimulation)
+
 ## Solutions For Sound Control in Events
 
 ## Solution for blimps
@@ -31,9 +32,13 @@ To demonstrate how these challenges can be met through the use of technology, MO
   1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD)
   2. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
   3. Common Operational Picture COP Tools
-    1. [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface
-    2. [COP APi](https://github.com/MONICA-Project/COP.API) - The MONICA COP API
-    3. [COP Updater](https://github.com/MONICA-Project/COPUpdater) - Is the link between the COP and the IoT Devices, pushing individual updates to the COP.
-    4. [COP DB](https://github.com/MONICA-Project/COP.DB) - The MONICA COP DB used for storing the state of the COP.
+    - [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface
+    
+    - [COP APi](https://github.com/MONICA-Project/COP.API) - The MONICA COP API
+    
+    - [COP Updater](https://github.com/MONICA-Project/COPUpdater) - Is the link between the COP and the IoT Devices, pushing individual updates to the COP.
+    
+    - [COP DB](https://github.com/MONICA-Project/COP.DB) - The MONICA COP DB used for storing the state of the COP.
+    
 
 
