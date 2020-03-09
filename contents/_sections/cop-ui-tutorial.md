@@ -4,6 +4,7 @@ title: COP UI Tutorial for staff tracking  <!--- This is required for the page t
 ---
 <span style="font-size:2em;">COP UI Tutorial for staff tracking</span>
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
+
 This is a tutorial for how to use the COP (Common Operational Picture) UI and is based on using the [Demonstration of staff management with LoRa based locators](https://github.com/MONICA-Project/staff-management-demo) simulated demonstration.
 
 * TOC (Do not remove. This is required to show Table of contents)
