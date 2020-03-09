@@ -26,7 +26,7 @@ In this case we have three modes:
 The number views depends on the application and can include views for sound and incident management.
 
 ## The MAP view functionality
-## Zoom and movement of the MAP
+### Zoom and movement of the MAP
 In the MAP view the user can zoom in and out of the map and also move the MAP. All this is achieved by using the normal Google Maps interface, i.e dragging the map with the mouse or fingers, zoom by pinching or by using the "+" and "-" controls in the map.
 
 ### Filtering of the MAP
