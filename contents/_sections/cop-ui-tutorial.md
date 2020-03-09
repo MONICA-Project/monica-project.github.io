@@ -15,7 +15,7 @@ This is a tutorial for how to use the COP (Common Operational Picture) UI and is
 ## Introduction
 The COP UI is a simple map based interface for displaying the current state of an event. The COP UI is built using predefined Points Of Interest POI, called instance data, and mixing it with sensor derived dynamic information. All the functionality exposed in the COP UI is using the COP API.
 ## Basic Components of the UI
-The user interface is built with a main menu that selects which view the user shown.
+The user interface is built with a main menu that selects which view the user shown (If you have installed  [Demonstration of staff management with LoRa based locators](https://github.com/MONICA-Project/staff-management-demo), it is available on http://127.0.0.1:8900 )
 
 ![COP UI](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/CNet%20Cop.PNG "COP UI")
 
