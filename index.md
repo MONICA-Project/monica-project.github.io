@@ -20,7 +20,8 @@ To demonstrate how these challenges can be met through the use of technology, MO
 
 3. [RIOT-OS based GPS tracking devices using LoRaWAN](https://github.com/MONICA-Project/lorawan-tracker)
 
-
+## Crowd Management
+1. [Demonstration of crowd management using smart wristbands](https://github.com/MONICA-Project/DockerGlobalWristbandSimulation)
 ## Solutions For Sound Control in Events
 
 ## Solution for blimps
