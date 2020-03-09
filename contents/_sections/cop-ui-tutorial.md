@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <COP UI Tutorial for staff tracking>  <!--- This is required for the page to come in the side pane --->
+title: COP UI Tutorial for staff tracking  <!--- This is required for the page to come in the side pane --->
 ---
 <span style="font-size:2em;">COP UI Tutorial for staff tracking</span>
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
