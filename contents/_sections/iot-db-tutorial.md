@@ -22,9 +22,10 @@ The OGC Sensorthings API model has a quite simple storage model:
 The most important entities in the IoT-DB are:
 - Sensor: represents the different input devices, such as trackers
 - Datastream: represents the streams of data, for instance positions et c. (One sensor can have many datastreams)
-- Observations: The actual values/results.
+- Observation: The actual values/results.
 
-The complete standard is available at  [OGC Sensorthings API](http://docs.opengeospatial.org/is/15-078r6/15-078r6.html)
+The IoT-DB is based on the Open Source database [GOST](https://www.gostserver.xyz/).
+The complete OGC Sensorthings API standard is available at the [OGC Sensorthings API](http://docs.opengeospatial.org/is/15-078r6/15-078r6.html) site.
 
 ## Simple browsing of the IoT-DB
 The best way of browsing the IoT-DB is to use the Firefox browser since it makes it possible to navigate using the links in the result. Otherwise you need to copy the links manually in the browser.
