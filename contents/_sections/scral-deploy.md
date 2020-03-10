@@ -6,7 +6,7 @@ title: SCRAL - Deploy a SCRAL Module <!--- This is required for the page to come
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
 
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL-Logo-V1.1.png" alt="SCRAL logo" width="350"/> <br>
-This tutorial will help you to understand how to run a SCRAL module from the dockerhub or directly from the source code. To understand how to develop your SCRAL module, please have a look to the following tutorial.
+This tutorial will help you to understand how to run a SCRAL module from the dockerhub or directly from the source code. To understand how to develop your SCRAL module, please have a look to the [following tutorial](https://monica-project.github.io/sections/scral-deploy.html).
 
 <!--
 ## Table of Contents
@@ -80,6 +80,15 @@ or to start the file "docker-compose-gost.yml" contained inside the "docker-comp
 $ docker-compose -f docker-compose-gost.yml up -d
 ```
 
+### Python Packages
+To work properly SCRAL requires the following Python packages (with the recommended versions):
+ - [Eclipse Paho](https://pypi.org/project/paho-mqtt/1.5) 1.5
+ - [Flask](https://pypi.org/project/Flask/1.0.2) 1.0.2
+ - [CherryPy](https://pypi.org/project/CherryPy/18.1.0) 18.1.0
+ - [arrow](https://pypi.org/project/arrow/0.14.2) 0.14.2 (arrow 0.15 not supported)
+ - [requests](https://pypi.org/project/requests/2.22.0) 2.22.0
+ - [configparser](https://pypi.org/project/configparser/3.7.1) 3.7.1
+
 ### Running a SCRAL module from the source code
 To give to developers the possibility to quickly switch between different configuration, SCRAL can work also using configuration files.
 The configuration files must be called “preference.json”.
@@ -99,12 +108,3 @@ Note: if the environmental variable CONFIG exists is set to "custom" the configu
 
 Once that the SCRAL module is up and running, you can have access to its APIs surfing the "entry endpoint" of the module (e.g.: for gps_tracker_rest the URL is http://localhost:8000/scral/v1.0/gps-tracker-gw).
 A complete list of API is avaiable on [SwaggerHub](https://app.swaggerhub.com/apis-docs/scral/SCRAL/).
-
-#### Python Packages
-To work properly SCRAL requires the following Python packages (with the recommended versions):
- - [Eclipse Paho](https://pypi.org/project/paho-mqtt/1.5) 1.5
- - [Flask](https://pypi.org/project/Flask/1.0.2) 1.0.2
- - [CherryPy](https://pypi.org/project/CherryPy/18.1.0) 18.1.0
- - [arrow](https://pypi.org/project/arrow/0.14.2) 0.14.2 (arrow 0.15 not supported)
- - [requests](https://pypi.org/project/requests/2.22.0) 2.22.0
- - [configparser](https://pypi.org/project/configparser/3.7.1) 3.7.1
