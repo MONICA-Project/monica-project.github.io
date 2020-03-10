@@ -31,7 +31,7 @@ The best way of browsing the IoT-DB is to use the Firefox browser since it makes
 
 ### List all sensors
 Use the following URL in your browser to list all defined sensors in the IoT-DB:
-http://localhost:8090/v1.0/Sensors
+<http://localhost:8090/v1.0/Sensors>
 
 The result will display all the avialable sensors. In this case only one, "GPS".
 ![COPDBSensors](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/gost_sensors.PNG "COPDBSensors")
@@ -39,7 +39,7 @@ The result will display all the avialable sensors. In this case only one, "GPS".
 ### List all associated Datastreams
 In the previous result there is a link "Datastreams@iot.navigationLink" with the value
 
-http://localhost:8090/v1.0/Sensors(1)/Datastreams
+<http://localhost:8090/v1.0/Sensors(1)/Datastreams>
 
 Following this link will display all the datastreams associated with this Sensor
 ![COPDBDatastreams](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/gost_datastreams.PNG "COPDBDatastreams")
@@ -47,7 +47,7 @@ Following this link will display all the datastreams associated with this Sensor
 ### Listing Observations
 In the previous result there is a link named "Observations@iot.navigationLink"
 
-http://localhost:8090/v1.0/Datastreams(22)/Observations
+<http://localhost:8090/v1.0/Datastreams(22)/Observations>
 
 Following this link will display all the Observations associated with this Datastream
 
