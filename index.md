@@ -29,7 +29,7 @@ To demonstrate how these challenges can be met through the use of technology, MO
 [](https://github.com/MONICA-Project/blimp)
 
 ## MONICA Platform Tools
-  1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD)
+  1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD_SourceCode)
   2. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
   3. Common Operational Picture COP Tools.
      * [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface.
