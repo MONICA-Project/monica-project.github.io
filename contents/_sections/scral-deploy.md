@@ -22,7 +22,7 @@ This tutorial will help you to understand how to run a SCRAL module from the doc
 ## Prerequisites
 
 ### Docker
-To start working with SCRAL is necessary to have Docker installed on your machine.
+To start working with SCRAL it is necessary to have Docker installed on your machine.
 To install the proper version for your operating system, have a look to the [Docker documentation page](https://docs.docker.com/).
 
 ### GOST
@@ -32,11 +32,11 @@ To learn more about OGC and GOST visit the [GOST GitHub page](https://github.com
 
 
 ## SCRAL quickstart with docker-compose
-SCRAL is an adaptation framework that contains different integration modules.
-Inside SCRAL repository is available a docker-compose folder to help you start working with SCRAL and GOST.
+SCRAL is an IoT adaptation framework that contains different integration modules.
+Inside SCRAL repository it is available a docker-compose folder to help you start working with SCRAL and GOST.
 
 ### Quickstart introduction
-A user can start a "quickstart" docker-compose file going inside "docker-compose" folder published inside SCRAL repository and running the command:
+A user can iniate a "quickstart" docker-compose file going inside "docker-compose" folder published inside SCRAL repository and running the command:
 ```bash
 $ docker-compose -f <file_name> up -d
 ```
