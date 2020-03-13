@@ -6,7 +6,7 @@ title: SCRAL - Deploy a SCRAL Module <!--- This is required for the page to come
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
 
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL-Logo-V1.1.png" alt="SCRAL logo" width="350"/> <br>
-This tutorial will help you to understand how to run a SCRAL module from the dockerhub or directly from the source code. To understand how to develop your SCRAL module, please have a look to the [following tutorial](https://monica-project.github.io/sections/scral-develop.html).
+This tutorial will help you to understand how to run a SCRAL module from the dockerhub or directly from the source code (if you want to understand how to develop your own SCRAL module, please have a look at the [SCRAL development tutorial](https://monica-project.github.io/sections/scral-develop.html)).
 
 <!--
 ## Table of Contents
