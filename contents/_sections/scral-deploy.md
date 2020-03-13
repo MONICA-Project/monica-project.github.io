@@ -60,8 +60,9 @@ scral:
 
 *Note2*: for certain modules it is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
 
-At the follwing link, inside SCRAL source code GitHub repository, you can find a ready-to-use docker-compose file: https://github.com/MONICA-Project/scral-framework/blob/master/docker-compose/docker-compose.yml.
+At the follwing link, inside SCRAL source code GitHub repository, you can find a [ready-to-use docker-compose file]( https://github.com/MONICA-Project/scral-framework/blob/master/docker-compose/docker-compose.yml) in which you have only to modify the name of the SCRAL image.
 This docker-compose file integrate the GOST environment and all the possible SCRAL enviromental variables. Variables that are not commented are mandatory. It is strongly suggested to start from this file.
+
 
 ### Testing SCRAL capabilities
 When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
