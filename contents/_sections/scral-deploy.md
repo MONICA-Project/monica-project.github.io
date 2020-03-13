@@ -6,7 +6,7 @@ title: SCRAL - Deploy a SCRAL Module <!--- This is required for the page to come
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
 
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL-Logo-V1.1.png" alt="SCRAL logo" width="350"/> <br>
-This tutorial will help you to understand how to deploy and run a SCRAL module from the dockerhub or directly from the source code
+This tutorial will help you to understand how to deploy and run a SCRAL module from the dockerhub or directly from the source code.
 
 Alternatively, if you want to understand how to develop your own SCRAL module, please have a look at the [SCRAL development tutorial](https://monica-project.github.io/sections/scral-develop.html).
 
@@ -34,8 +34,9 @@ To learn more about OGC and GOST visit the [GOST GitHub page](https://github.com
 
 
 ## SCRAL quickstart with docker-compose
-SCRAL is an IoT adaptation framework that contains different integration modules.
-Inside the SCRAL repository you can find a docker-compose folder to help you start working with SCRAL and GOST.
+SCRAL is an IoT adaptation framework that contains different adapters, called also resource managers. In the SCRAL source code repository, you can find a [docker-compose template]( https://github.com/MONICA-Project/scral-framework/blob/master/docker-compose/docker-compose.yml) to start working with SCRAL and GOST. You just need to modify only the name of the adapter (corresponding to the name of the SCRAL image).
+
+This docker-compose file integrate the GOST environment and all the possible SCRAL enviromental variables. Note that the variables that are not commented are mandatory.
 
 ### Quickstart introduction
 A user can initiate a "quickstart" docker-compose file going inside "docker-compose" folder published inside SCRAL repository and running the command:
@@ -43,11 +44,11 @@ A user can initiate a "quickstart" docker-compose file going inside "docker-comp
 $ docker-compose -f <file_name> up -d
 ```
 
-To have a first start the complete environment (GOST+SCRAL), we suggest starting from "docker-compose.yml" file.
-
 ### Before Starting
-For running a SCRAL docker-compose, it is necessary to set few environmental variables.
+For running a SCRAL docker-compose, it is necessary to set few environmental variables:
+
 •	To enable the usage of the other environmental variables it is necessary to have the variable "CONFIG" set to value "custom".
+
 •	To start a SCRAL module it is necessary to specify the name of the docker image to load (e.g.: monicaproject/scral:glasses)
 
 ```docker-compose
@@ -58,12 +59,9 @@ scral:
         CONFIG: custom
 ```
 
-*Note*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
+*Note1*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
 
 *Note2*: for certain modules it is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
-
-At the follwing link, inside SCRAL source code GitHub repository, you can find a [ready-to-use docker-compose file]( https://github.com/MONICA-Project/scral-framework/blob/master/docker-compose/docker-compose.yml) in which you have only to modify the name of the SCRAL image.
-This docker-compose file integrate the GOST environment and all the possible SCRAL enviromental variables. Variables that are not commented are mandatory. It is strongly suggested to start from this file.
 
 
 ### Testing SCRAL capabilities
