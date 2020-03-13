@@ -26,14 +26,14 @@ To start working with SCRAL it is necessary to have Docker installed on your mac
 To install the proper version for your operating system, have a look to the [Docker documentation page](https://docs.docker.com/).
 
 ### GOST
-SCRAL depends on GOST, a [Go](https://golang.org/) implementation of the Sensing OGC [SensorThings API](http://developers.sensorup.com/docs).
+SCRAL depends on the GOST server, a [Go](https://golang.org/) implementation of the Sensing OGC [SensorThings API](http://developers.sensorup.com/docs).
 To learn more about OGC and GOST visit the [GOST GitHub page](https://github.com/gost/server) or the MONICA tutorial about 
 [OGC Historical Data Retrieval & Visualizations](https://monica-project.github.io/sections/gost_retrieval.html).
 
 
 ## SCRAL quickstart with docker-compose
 SCRAL is an IoT adaptation framework that contains different integration modules.
-Inside SCRAL repository is available a docker-compose folder to help you start working with SCRAL and GOST.
+Inside the SCRAL repository you can find a docker-compose folder to help you start working with SCRAL and GOST.
 
 ### Quickstart introduction
 A user can initiate a "quickstart" docker-compose file going inside "docker-compose" folder published inside SCRAL repository and running the command:
@@ -44,9 +44,9 @@ $ docker-compose -f <file_name> up -d
 To have a first start the complete environment (GOST+SCRAL), we suggest starting from "docker-compose.yml" file.
 
 ### Before Starting
-For running a SCRAL docker-compose, it is necessary that few environmental variables are set.
-•	To enable the usage of the other environmental variables is necessary to have variable "CONFIG" sets to value "custom".
-•	To start a SCRAL module is necessary to specify the name of the docker image to load (e.g.: monicaproject/scral:glasses)
+For running a SCRAL docker-compose, it is necessary to set few environmental variables.
+•	To enable the usage of the other environmental variables it is necessary to have the variable "CONFIG" set to value "custom".
+•	To start a SCRAL module it is necessary to specify the name of the docker image to load (e.g.: monicaproject/scral:glasses)
 
 ```docker-compose
 scral:
@@ -58,15 +58,15 @@ scral:
 
 *Note*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
 
-*Note2*: for certain modules is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
+*Note2*: for certain modules it is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
 
 ### Testing SCRAL capabilities
 When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
 You can interact with SCRAL using the APIs available [here](www.example.org).
 <!-- generate and publish Swagger SCRAL API -->
 
-Each SCRAL module with a REST endpoint exposes also a landing page useful both for testing reachability of the endpoint 
-and for having a quick overview of the available SCRAL API
+Each SCRAL module exposes also a landing web-page useful for both testing the reachability of the endpoint 
+and having a quick overview of the available SCRAL APIs
 (e.g.: for gps_tracker_rest the URL is http://localhost:8000/scral/v1.0/gps-tracker-gw).
 
 
@@ -81,7 +81,7 @@ $ docker-compose -f docker-compose-gost.yml up -d
 ```
 
 ### Python Packages
-To work properly SCRAL requires the following Python packages (with the recommended versions):
+To work properly with the SCRAL, it is required the following Python packages (with the recommended versions):
  - [Eclipse Paho](https://pypi.org/project/paho-mqtt/1.5) 1.5
  - [Flask](https://pypi.org/project/Flask/1.0.2) 1.0.2
  - [CherryPy](https://pypi.org/project/CherryPy/18.1.0) 18.1.0
@@ -96,15 +96,15 @@ If nothing is specified, in each module folder, the default configuration file m
 
 When you start working with SCRAL, you can decide if you prefer to modify the content of the default file, or if you want to create a new folder inside the already present "config" folder (e.g.: "config/my_config_folder").
 
-To start the execution just go in the SCRAL main folder and run the following command:
+To start a execution just go in the SCRAL main folder and run the following command:
 ```bash
 python <module_name>/<start_module.py> -p <my_config_folder>
 ```
-For example, if you want to start the smart glasses module and you want to store your preferences inside: "smart_glasses/config/test/preferences.json", you can run the following command:
+For example, if you want to start the SCRAL integrating the smart glasses module and you want to store your preferences inside: "smart_glasses/config/test/preferences.json", you can run the following command:
 ```bash
 python smart_glasses/start_smart_glasses.py -p test
 ```
-Note: if the environmental variable CONFIG exists is set to "custom" the configuration file is not read.
+Note: if the environmental variable CONFIG exists and it is set to "custom" then the configuration file is not read.
 
 Once that the SCRAL module is up and running, you can have access to its APIs surfing the "entry endpoint" of the module (e.g.: for gps_tracker_rest the URL is http://localhost:8000/scral/v1.0/gps-tracker-gw).
 A complete list of API is avaiable on [SwaggerHub](https://app.swaggerhub.com/apis-docs/scral/SCRAL/).
