@@ -53,12 +53,15 @@ scral:
     image: monicaproject/scral:${SCRAL_MODULE}
     container_name: "SCRAL-${SCRAL_MODULE}"
     environment:
-        CONFIG: “custom”
+        CONFIG: custom
 ```
 
 *Note*: you can run only a quickstart image present inside the [SCRAL archive of MONICA docker-hub](https://hub.docker.com/r/monicaproject/scral/tags).
 
 *Note2*: for certain modules it is necessary to specify additional environmental variables, for more details have a look to the [MONICA SCRAL dockerhub](https://hub.docker.com/r/monicaproject/scral).
+
+At the follwing link, inside SCRAL source code GitHub repository, you can find a ready-to-use docker-compose file: https://github.com/MONICA-Project/scral-framework/blob/master/docker-compose/docker-compose.yml.
+This docker-compose file integrate the GOST environment and all the possible SCRAL enviromental variables. Variables that are not commented are mandatory. It is strongly suggested to start from this file.
 
 ### Testing SCRAL capabilities
 When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
