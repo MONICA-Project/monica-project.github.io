@@ -57,7 +57,7 @@ The following picture shows the high-level architecture of the SCRAL framework.<
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL_architecture.png" alt="SCRAL high level architecture" width="350"/> <br>
 
 To create a new SCRAL module, you can start from the "template_rest" folder and modify it according to your needs.
-This folder contains a generic "ready-to-use" SCRAL module that exposes a REST <em>resource manager</em> and it is configured to contact GOST through REST and MQTT <em>connectors</em> (look at the previous picture).
+This folder contains a generic "ready-to-use" SCRAL module that exposes a REST-based <em>resource manager</em> and it is configured to contact the GOST server through REST and MQTT <em>connectors</em> (look at the previous picture).
 
 ### Step 1: Prepare the OGC Configuration
 As already mentioned, SCRAL is strongly connected to the OGC Sensor Things model. To get familiar with this model, it is strongly suggested having a look at the [official documentation](http://developers.sensorup.com/docs/#sensorthingsAPISensing).
