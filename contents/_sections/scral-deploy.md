@@ -65,8 +65,9 @@ scral:
 
 
 ### Testing SCRAL capabilities
-When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
-You can interact with SCRAL using the APIs available [here](https://app.swaggerhub.com/apis-docs/scral/SCRAL/1.0.0).
+When the SCRAL is up and running, the adapter is able to manage data flow mainly through either REST or MQTT messages.
+You can interact with SCRAL using the APIs available [here](www.example.org).
+<!-- generate and publish Swagger SCRAL API -->
 
 Each SCRAL module exposes also a landing web-page useful for both testing the reachability of the endpoint 
 and having a quick overview of the available SCRAL APIs
@@ -74,9 +75,9 @@ and having a quick overview of the available SCRAL APIs
 
 
 ## Run SCRAL Python code
-SCRAL open source code is available inside [MONICA project repository](https://github.com/MONICA-Project/scral-framework).
+The SCRAL source code is available in [MONICA project repository](https://github.com/MONICA-Project/scral-framework).
 It is possible to fork (or simply download) the repository and start working directly on the source code.
-As already mentioned, it is necessary to have already started a GOST instance to make SCRAL properly work.
+As already mentioned, it is necessary to have already started a GOST docker instance to make SCRAL properly working.
 To do that, it is possible to download a docker-compose file from [GOST repository](https://github.com/gost/docker-compose)
 or to start the file "docker-compose-gost.yml" contained inside the "docker-compose" folder of SCRAL repository through the command:
 ```bash
@@ -93,17 +94,17 @@ To work properly with the SCRAL, it is required the following Python packages (w
  - [configparser](https://pypi.org/project/configparser/3.7.1) 3.7.1
 
 ### Running a SCRAL module from the source code
-To give to developers the possibility to quickly switch between different configuration, SCRAL can work also using configuration files.
+To give to developers the possibility to quickly switch between different configurations, SCRAL can work also using configuration files.
 The configuration files must be called “preference.json”.
 If nothing is specified, in each module folder, the default configuration file must be stored inside "config/local".
 
-When you start working with SCRAL, you can decide if you prefer to modify the content of the default file, or if you want to create a new folder inside the already present "config" folder (e.g.: "config/my_config_folder").
+When you start working with SCRAL, you can decide if you prefer to modify the content of the default file, or if you want to create a new folder inside the already existing "config" folder (e.g.: "config/my_config_folder").
 
-To start a execution just go in the SCRAL main folder and run the following command:
+To start an execution just go in the SCRAL main folder and run the following command:
 ```bash
 python <module_name>/<start_module.py> -p <my_config_folder>
 ```
-For example, if you want to start the SCRAL integrating the smart glasses module and you want to store your preferences inside: "smart_glasses/config/test/preferences.json", you can run the following command:
+For example, if you want to start the SCRAL tha integrates the smart glasses module and you want to store your preferences inside: "smart_glasses/config/test/preferences.json", you can run the following command:
 ```bash
 python smart_glasses/start_smart_glasses.py -p test
 ```
