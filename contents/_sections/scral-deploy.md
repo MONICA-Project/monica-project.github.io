@@ -66,8 +66,7 @@ scral:
 
 ### Testing SCRAL capabilities
 When SCRAL is up and running, it can manage data flow mainly through REST or MQTT messages.
-You can interact with SCRAL using the APIs available [here](www.example.org).
-<!-- generate and publish Swagger SCRAL API -->
+You can interact with SCRAL using the APIs available [here](https://app.swaggerhub.com/apis-docs/scral/SCRAL/1.0.0).
 
 Each SCRAL module exposes also a landing web-page useful for both testing the reachability of the endpoint 
 and having a quick overview of the available SCRAL APIs
