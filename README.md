@@ -33,6 +33,16 @@ Contents
 ### Adding Images to the Sections
 You can add image to [assets/img folder](https://github.com/MONICA-Project/monica-project.github.io/tree/master/assets/img) and directly link it in the markdown file.
 
+# Previewing the Tutorials Locally
+If you would like to run the Tutorial website locally for easy developemt:
+1. Install Ruby (2.6.5, and not the latest) 
+2. clone the repository : `git clone https://github.com/MONICA-Project/monica-project.github.io`
+3. `cd` to the cloned directory
+4.  Run `script/bootstrap` to install the necessary dependencies.
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+
 ## Affiliation
 ![MONICA](https://github.com/MONICA-Project/template/raw/master/monica.png)  
 This work is supported by the European Commission through the [MONICA H2020 PROJECT](https://www.monica-project.eu) under grant agreement No 732350.
