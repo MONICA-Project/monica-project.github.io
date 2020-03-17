@@ -40,15 +40,17 @@ The result will display all the avialable sensors. In this case only one, "GPS".
 ### List all associated Datastreams
 In the previous result there is a link "Datastreams@iot.navigationLink" with the value
 
-<http://localhost:8090/v1.0/Sensors(1)/Datastreams>
+> http://localhost:8090/v1.0/Sensors(1)/Datastreams
+
 
 Following this link will display all the datastreams associated with this Sensor
 ![COPDBDatastreams](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/gost_datastreams.PNG "COPDBDatastreams")
 
 ### Listing Observations
-In the previous result there is a link named "Observations@iot.navigationLink"
+In the previous result there is a link named `Observations@iot.navigationLink"`
 
-<http://localhost:8090/v1.0/Datastreams(22)/Observations>
+> http://localhost:8090/v1.0/Datastreams(22)/Observations
+
 
 Following this link will display all the Observations associated with this Datastream
 
@@ -83,17 +85,15 @@ The OGC Sensorthings allow for querying by using filters and also to include rel
 ### $filter
 $filter is used for filtering and querying the IoT-DB. For example, to list all the Datastreams which are GPS coordinates we can filter on the Datastream description:
 
-````
-http://localhost:8090/v1.0/Datastreams?$filter=substringof('GPS/Localization-GPS',name)
-````
+ > http://localhost:8090/v1.0/Datastreams?$filter=substringof('GPS/Localization-GPS',name)
+
 This will retrieve all the Datastreams that have GPS/Localization-GPS in their name.
 
 ### $expand
-A common case is that you select the Datastreams that you are interested in but you also want to include the latest Observation. This can be achieved by using $expand:
+A common case is that you select the Datastreams that you are interested in but you also want to include the latest Observation. This can be achieved by using `$expand`:
 
-````
-http://localhost:8090/v1.0/Datastreams?$filter=substringof('GPS/Localization-GPS',name)&$expand=Observations($top=1)
-````
+> http://localhost:8090/v1.0/Datastreams?$filter=substringof('GPS/Localization-GPS',name)&$expand=Observations($top=1)
+
 For each of the Datastreams the latest Observation will be included:
 ````json
 {
