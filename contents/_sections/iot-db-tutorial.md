@@ -32,7 +32,8 @@ The best way of browsing the IoT-DB is to use the Firefox browser since it makes
 
 ### List all sensors
 Use the following URL in your browser to list all defined sensors in the IoT-DB:
-<http://localhost:8090/v1.0/Sensors>
+
+> http://localhost:8090/v1.0/Sensors
 
 The result will display all the avialable sensors. In this case only one, "GPS".
 ![COPDBSensors](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/gost_sensors.PNG "COPDBSensors")
