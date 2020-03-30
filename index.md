@@ -22,8 +22,12 @@ To demonstrate how these challenges can be met through the use of technology, MO
 
 ## Crowd Management
 1. [Demonstration of crowd management using smart wristbands](https://github.com/MONICA-Project/DockerGlobalWristbandSimulation)
+2. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
+
 
 ## Solutions For Sound Control in Events
+1. [Demonstration of Sound Monitoring an event using Sound Level Meters](https://github.com/MONICA-Project/DockerSoundDemo)
+2. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
 
 ## Solution for blimps
 [](https://github.com/MONICA-Project/blimp)
