@@ -25,9 +25,14 @@ To demonstrate how these challenges can be met through the use of technology, MO
 2. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
 
 
-## Solutions For Sound Control in Events
+## Solutions For Sound Control at Events
 1. [Demonstration of Sound Monitoring an event using Sound Level Meters](https://github.com/MONICA-Project/DockerSoundDemo)
 2. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
+
+## Solutions For Managing Weather and monitoring weather conditions at Events
+1. [Environment Sensors for managing weather related incidents Demo](https://github.com/MONICA-Project/DockerEnvironmentSensorDemo)
+2. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
+
 
 ## Solution for blimps
 [](https://github.com/MONICA-Project/blimp)
