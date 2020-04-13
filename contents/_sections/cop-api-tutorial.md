@@ -57,7 +57,7 @@ Execute the API call by clicking on the Execute button below:
 ![Swagger POICreate](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/cop-api-add-zone.PNG "Swagger POICreate")
 
 If all went well, the result of the call is displayed, there should be a new Cocktail Stand shown in the COP UI.
-(The UI is available on http://127.0.0.1:8900 and make sure that the filter for Cocktal Atands is activated)
+(The UI is available on http://127.0.0.1:8900 and make sure that the filter for Cocktail Stands is activated)
 
 ![Swagger POIAdded](https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/added%20POI.PNG "Swagger POIAdded")
 
