@@ -40,7 +40,7 @@ To demonstrate how these challenges can be met through the use of technology, MO
 ## MONICA Platform Tools
   1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD_SourceCode)
   2. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
-  3. [Decision Support System (DSS)](https://github.com/MONICA-Project/observation-replayer)
+  3. [Decision Support System (DSS)](https://github.com/MONICA-Project/DSS)
   4. Common Operational Picture COP Tools.
      * [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface.
      * [COP APi](https://github.com/MONICA-Project/COP.API) - The MONICA COP API.    
