@@ -40,20 +40,25 @@ The MONICA Development Toolbox consists of:
      
 ### Sound 
   1. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
+  
 ### Cameras
   1. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
   2. [VCA Core](https://github.com/MONICA-Project/sfn/blob/master/VCAcore_Installation.md)
+  
 ### Wearables
   1. [ORA Smartglasses](https://github.com/MONICA-Project/MonicOra)
   2. [Staff Management application](https://github.com/MONICA-Project/map-project)
   3. [LoTrack (LoRaWAN trackers)](https://github.com/MONICA-Project/LoTrack)
   4. [RIOT-OS based GPS tracking devices using LoRaWAN](https://github.com/MONICA-Project/lorawan-tracker)
+  
 ### Simulators
   1. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
   2. [OGC Sensorthings Observation Simulator](https://github.com/MONICA-Project/RunSimulation)
   3. [Smart Wristband Simulator](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+  
 ### Developer Tools
   1. [SignalR Listener](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+  
 ## Third Party Tools  
   1. [mqttFx](https://mqttfx.jensd.de/) MQTT Client for debugging
   2. [HeidiSQL](https://www.heidisql.com/) Database Access
