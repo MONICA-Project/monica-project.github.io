@@ -27,8 +27,8 @@ The MONICA Development Toolbox consists of:
 ### Safety incidents
 [Managing weather related incidents Demo](https://github.com/MONICA-Project/DockerEnvironmentSensorDemo)
 
-## MONICA Platform Tools
-### Generic Tools
+## MONICA Platform 
+### Generic Components
   1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD_SourceCode)
   2. [The Smart City Resource Adaptation Layer (SCRAL)](https://github.com/MONICA-Project/scral-framework)
   3. [Decision Support System (DSS)](https://github.com/MONICA-Project/DSS)
@@ -56,8 +56,9 @@ The MONICA Development Toolbox consists of:
   2. [OGC Sensorthings Observation Simulator](https://github.com/MONICA-Project/RunSimulation)
   3. [Smart Wristband Simulator](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
   
-### Developer Tools
+### Tools
   1. [SignalR Listener](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+  2. [COP KML Loader](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
   
 ## Third Party Tools  
   1. [mqttFx](https://mqttfx.jensd.de/) MQTT Client for debugging
