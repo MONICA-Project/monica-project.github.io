@@ -5,7 +5,7 @@ layout: default
 # MONICA Development Toolbox
 Sound and security applications for large, open-air events in the city using IoT-enabled devices such as smart wristbands, video cameras, sound level meters and mobile phones.
 
-The MONICA project was a large-scale demonstration of new and existing IoT applications, see https://www.monica-project.eu/ for more information.
+The MONICA project was a large-scale demonstration of new and existing IoT applications, see [https://www.monica-project.eu/](https://www.monica-project.eu/) for more information.
 
 The MONICA Development Toolbox consists of:
 * Tutorials, see left column.
