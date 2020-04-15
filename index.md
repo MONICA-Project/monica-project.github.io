@@ -2,50 +2,61 @@
 layout: default
 ---
 
-# About MONICA
-Sound and security applications for large, open-air events in the city
+# MONICA Development Toolbox
+Sound and security applications for large, open-air events in the city using IoT-enabled devices such as smart wristbands, video cameras, sound level meters and mobile phones.
 
-The MONICA project is a large-scale demonstration of new and existing IoT applications for a smarter living. The demonstration involves six major cities in Europe: Lyon, Bonn, Leeds, Turin, Copenhagen and Hamburg.
+The MONICA project was a large-scale demonstration of new and existing IoT applications, see https://www.monica-project.eu/ for more information.
 
-Focus is on one of the key aspects of European society: the cultural performances in open-air settings which create challenges in terms of crowd safety, security and noise pollution.
+The MONICA Development Toolbox consists of:
+* Tutorials, see left column.
+* Packages, which are ready to go complete environments based on Docker that immediately are runnable and also contain simulated data sources.
+* Resusable tools and components which are mostly Open Source.
+* Third party tools that have been used and tested by the MONICA project at different pilot and worked well.
 
-To demonstrate how these challenges can be met through the use of technology, MONICA will develop, deploy and demonstrate three IoT ecosystems on security, acoustics and innovation, addressing real user needs. Within these systems, several applications are deployed, using IoT-enabled devices such as smart wristbands, video cameras, loudspeakers and mobile phones.
-
-# Monica Solutions
+# Packages
 
 ## Staff Management
-1. [Demonstration of staff management with LoRa based locators]( https://github.com/MONICA-Project/staff-management-demo)
+[Staff management package]( https://github.com/MONICA-Project/staff-management-demo)
 
-2. [ Staff Management application ](https://github.com/MONICA-Project/map-project)
+## Monitor crowd based on capacity
+[Crowd management using smart wristbands and cameras](https://github.com/MONICA-Project/DockerGlobalWristbandSimulation)
 
-3. [RIOT-OS based GPS tracking devices using LoRaWAN](https://github.com/MONICA-Project/lorawan-tracker)
+## Sound monitoring
+[Sound Monitoring an event using Sound Level Meters](https://github.com/MONICA-Project/DockerSoundDemo)
 
-## Crowd Management
-1. [Demonstration of crowd management using smart wristbands](https://github.com/MONICA-Project/DockerGlobalWristbandSimulation)
-2. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
-
-
-## Solutions For Sound Control at Events
-1. [Demonstration of Sound Monitoring an event using Sound Level Meters](https://github.com/MONICA-Project/DockerSoundDemo)
-2. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
-
-## Solutions For Managing Weather and monitoring weather conditions at Events
-1. [Environment Sensors for managing weather related incidents Demo](https://github.com/MONICA-Project/DockerEnvironmentSensorDemo)
-2. [Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
-
-
-## Solution for blimps
-[](https://github.com/MONICA-Project/blimp)
+## Safety incidentss
+[Managing weather related incidents Demo](https://github.com/MONICA-Project/DockerEnvironmentSensorDemo)
 
 ## MONICA Platform Tools
+### Generic Tools
   1. [High Level Data Fusion and Anomaly Detection Module (HLDFAD)](https://github.com/MONICA-Project/HLDFAD_SourceCode)
-  2. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
+  2. [The Smart City Resource Adaptation Layer (SCRAL)](https://github.com/MONICA-Project/scral-framework)
   3. [Decision Support System (DSS)](https://github.com/MONICA-Project/DSS)
   4. Common Operational Picture COP Tools.
      * [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface.
      * [COP APi](https://github.com/MONICA-Project/COP.API) - The MONICA COP API.    
      * [COP Updater](https://github.com/MONICA-Project/COPUpdater) - Is the link between the COP and the IoT Devices, pushing individual updates to the COP.    
      * [COP DB](https://github.com/MONICA-Project/COP.DB) - The MONICA COP DB used for storing the state of the COP.
-    
+### Sound 
+[Sound Heat Map Generator](https://github.com/MONICA-Project/sound-heat-map)
+### Cameras
+  1. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
+  2. [VCA Core](https://github.com/MONICA-Project/sfn/blob/master/VCAcore_Installation.md)
+### Wearables
+  1. [ORA Smartglasses](https://github.com/MONICA-Project/MonicOra)
+  2. [Staff Management application](https://github.com/MONICA-Project/map-project)
+  3. [LoTrack (LoRaWAN trackers)](https://github.com/MONICA-Project/LoTrack)
+  4. [RIOT-OS based GPS tracking devices using LoRaWAN](https://github.com/MONICA-Project/lorawan-tracker)
+### Simulators
+  1. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
+  2. [OGC Sensorthings Observation Simulator](https://github.com/MONICA-Project/RunSimulation)
+  3. [Smart Wristband Simulator](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+### Developer Tools
+[SignalR Listener](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+## Third Party Tools  
+  1. [mqttFx](https://mqttfx.jensd.de/) MQTT Client for debugging
+  2. [HeidiSQL](https://www.heidisql.com/) Database Access
+  3. [mosquitto](https://mosquitto.org/) MQTT Broker
+  4. [GOST](https://www.gostserver.xyz/) OGC Sensorthings API database
 
 
