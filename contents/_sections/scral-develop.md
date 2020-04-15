@@ -1,12 +1,12 @@
 ---
 layout: default
-title: SCRAL - Develop a new SCRAL module <!--- This is required for the page to come in the side pane --->
+title: SCRAL - Develop a new SCRAL REST module <!--- This is required for the page to come in the side pane --->
 ---
-<span style="font-size:2em;">SCRAL - Develop a new SCRAL module</span>
+<span style="font-size:2em;">SCRAL - Develop a new SCRAL REST module</span>
 <!-- Using Span is a hack to avoid the title to come again in TOC.-->
 
 <img src="https://github.com/MONICA-Project/monica-project.github.io/raw/master/assets/img/SCRAL-Logo-V1.1.png" alt="SCRAL logo" width="350"/> <br>
-This tutorial will help you to understand how to develop your own SCRAL module. 
+This tutorial will help you to understand how to develop your own SCRAL module with a REST resource manager.
 
 Alternatively, if you want to understand how to deploy and run an existing SCRAL module, please have a look at the [SCRAL deployment tutorial](https://monica-project.github.io/sections/scral-deploy.html).
 
