@@ -24,7 +24,7 @@ The MONICA Development Toolbox consists of:
 ### Sound monitoring
 [Sound Monitoring an event using Sound Level Meters](https://github.com/MONICA-Project/DockerSoundDemo)
 
-### Safety incidentss
+### Safety incidents
 [Managing weather related incidents Demo](https://github.com/MONICA-Project/DockerEnvironmentSensorDemo)
 
 ## MONICA Platform Tools
