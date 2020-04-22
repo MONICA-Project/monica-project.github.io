@@ -44,7 +44,7 @@ The MONICA Development Toolbox consists of:
   
 ### Cameras
   1. [Security Fusion Node SFN](https://github.com/MONICA-Project/sfn)
-  2. [VCA Core](https://github.com/MONICA-Project/sfn/blob/master/VCAcore_Installation.md) P
+  2. [VCA Core](https://github.com/MONICA-Project/sfn/blob/master/VCAcore_Installation.md) 
   
 ### Wearables
   1. [ORA Smartglasses](https://github.com/MONICA-Project/MonicOra)
