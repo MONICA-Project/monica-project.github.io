@@ -56,6 +56,7 @@ The MONICA Development Toolbox consists of:
   1. [OGC Sensorthings Observation Replayer](https://github.com/MONICA-Project/observation-replayer)
   2. [OGC Sensorthings Observation Simulator](https://github.com/MONICA-Project/RunSimulation)
   3. [Smart Wristband Simulator](https://github.com/MONICA-Project/WristbandGwMqttEmulator)
+  
 ### Analytics
   1. [Monica Jupyter Notebooks connected to a GOST database](https://github.com/MONICA-Project/gost-data_analytics)
   2. [Grafana Connection To IoT-DB](https://monica-project.github.io/sections/gost_retrieval.html)
@@ -69,6 +70,6 @@ The MONICA Development Toolbox consists of:
   2. [HeidiSQL](https://www.heidisql.com/) Database Access
   3. [mosquitto](https://mosquitto.org/) MQTT Broker
   4. [GOST](https://www.gostserver.xyz/) OGC Sensorthings API database
-  5. [Grafana](https://grafana.com/) [Visualisation tutorial](https://monica-project.github.io/sections/gost_retrieval.html)
+  5. [Grafana](https://grafana.com/) Graphs and other visualisations [Visualisation tutorial](https://monica-project.github.io/sections/gost_retrieval.html)
 
 
